@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans antialiased text-gray-800 bg-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+  .card-shadow {
+    @apply shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_60px_rgba(108,60,225,0.15)] transition-shadow duration-300;
+  }
+  .floating-card {
+    @apply absolute bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-white/30 p-3 flex items-center gap-3;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #6C3CE1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a2fc7;
+}
