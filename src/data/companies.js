@@ -7,12 +7,12 @@ export const companies = [
     {
       id: 2,
       name: 'Microsoft',
-      logoUrl: '/microsoft.jpeg'
+      logoUrl: 'public/microsoft.jpeg'
     },
     {
       id: 3,
       name: 'Slack',
-      logoUrl: '/slack.png'
+      logoUrl: 'public/slack.png'
     },
     {
       id: 4,
@@ -22,7 +22,7 @@ export const companies = [
     {
       id: 5,
       name: 'Amazon',
-      logoUrl: '/amazon.png'
+      logoUrl: 'public/amazon.png'
     },
     {
       id: 6,
